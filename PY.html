@@ -28,9 +28,9 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://www.imageoss.com/images/2021/07/17/T27LHRPTBS4H9TJVMBRYBI07dea1dd33bc5b91.th.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-  <link rel="stylesheet" href="/css/style.css?v=1626517207118">
+  <link rel="stylesheet" href="/css/style.css?v=1626517806763">
   
-  <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1626517207118">
+  <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1626517806763">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -181,7 +181,7 @@
 
  
 
-<script async src="/js/app.js?v=1626517207119"></script>
+<script async src="/js/app.js?v=1626517806763"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 <script>
@@ -194,12 +194,25 @@
 
 <script type="text/javascript" src="/js/clicklove.js"></script> 
 <script type="text/javascript" src="/js/yinghua.js"></script> 
-<!-- MetingJS音乐播放器 不能放到 head 导致系统功能加载异常-->
-<link rel="stylesheet" href="//cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css">
-<script src="//cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-<meting-js server="netease" type="playlist" id="6860014124"  autoplay="false" fixed ="true" </meting-js>
 
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<meting-js 
+	server="netease" 
+	type="playlist" 
+	id="6860014124"
+	fixed="true" 
+	autoplay="false"
+	loop="all"
+	order="random"
+	preload="auto"
+	list-folded="ture"
+	lrc-type="1"
+	mutex="true">
+</meting-js>
 
   
 
