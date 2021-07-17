@@ -21,13 +21,13 @@
 <meta property="og:description" content="这里是Nexmoe一个特别的Hexo主题一开始我在想如何加入JavaScript时呢..  试过了网上很多方法 大部分都是将文件存放在了source&#x2F;_post的主目录下然后使用hexo generate生成网页静态文件（html（存放在public目录内想直接编辑markdown源文件对应生成的静态文件 插入js  好像没什么用耶ww我亲身试验了很多方法 终于发现！ D:\Blog\themes">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-02T02:11:25.000Z">
-<meta property="article:modified_time" content="2020-02-02T03:10:12.166Z">
+<meta property="article:modified_time" content="2021-07-17T05:56:40.051Z">
 <meta property="article:author" content="Yukami❤">
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-  <link rel="stylesheet" href="/css/style.css?v=1626494953271">
+  <link rel="stylesheet" href="/css/style.css?v=1626501414823">
   
-  <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1626494953271">
+  <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1626501414823">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -51,7 +51,7 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>2</div>
+        <div><span>文章</span>3</div>
         <div><span>标签</span>0</div>
         <div><span>分类</span>0</div>
     </div>
@@ -126,6 +126,9 @@
         
     </div>
 </div><!-- .nexmoe-drawer -->
+
+
+
   </div>
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
@@ -141,8 +144,8 @@
     
     <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
     <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月02日</a>
-    <a><i class="nexmoefont icon-areachart"></i>255 字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+    <a><i class="nexmoefont icon-areachart"></i>703 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
 </div>
 
     
@@ -155,6 +158,22 @@
 <p>D:\Blog\themes\nexmoe\layout_partial\after-footer.ejs类似目录 输入类似script type=”text/javascript” src=”/js/clicklove.js”&gt;/script&gt; 中间的clicklove.js替换一下 然后就是D:\Blog\themes\nexmoe\source\js放入JavaScript文件 这样就完成啦~</p>
 <h2 id="因为冲突问题-记得将-lt-gt-给补全噢"><a href="#因为冲突问题-记得将-lt-gt-给补全噢" class="headerlink" title="因为冲突问题 记得将&lt;&gt;给补全噢~ "></a><b>因为冲突问题 记得将&lt;&gt;给补全噢~</b> </h2><p>再就是加入图片！<br>我在网上试了很多关于markdown语法的用法<br>实际上我好像弄了几天⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄<br>然后将|这里需要替换为感叹号|[这是个例子]|(定向URL)就可以了啦<br><b>要将||去掉噢</b></p>
 <p><b><font color="pink" face="宋体" size= 3>玩的开心~</font></b><br><b><font color="red"  size= 3>⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄</font></b></p>
+<p>第二个 我总是忘记怎么创建新的页面<br>首先打开Git bash 输入hexo new page xx<br><b>在站点根目录下的 source 文件夹内创建一个 .md </b>文件，文件名和路径根据个人喜好决定，会决定渲染生成以后页面的路径。</p>
+<hr>
+<p>title: links<br>date: 2013/7/13 20:46:25<br>layout: py<br>permalink: PY.html</p>
+<p>layout用的是文件内的布局<br>title 可以更换为自己喜欢的标题, permalink为本页面地址<br>source创建一个新的.md文件 然后以上面的格式读取就行</p>
+<hr>
+<p>还有第三个 就是音乐播放器<br>全部网站都说了MetingJS+Aplayer<br>好的 Aplayer我有了 npm install –save hexo-tag-aplayer<br>那MetingJS呢 那咋办 网上看了一堆稀碎的东西 一个也不说MetingJS怎么装</p>
+<p>这里给出代码 说起来这么久了我还没用过代码块….</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">&quot;stylesheet&quot;</span> href=<span class="string">&quot;//cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css&quot;</span>&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;//cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;meting-js server=<span class="string">&quot;netease&quot;</span> <span class="built_in">type</span>=<span class="string">&quot;playlist&quot;</span> id=<span class="string">&quot;4902606135&quot;</span>  autoplay=<span class="string">&quot;false&quot;</span> fixed =<span class="string">&quot;true&quot;</span> &lt;/meting-js&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>我没发现的东西其实在刚开始的Hello World已经有了</p>
+<p>代码块只要打和~一起的反单引号就可以 例如</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```bash</span><br><span class="line">内容</span><br><span class="line">第三行用三个反单引号</span><br></pre></td></tr></table></figure>
+<p>然后就是把鼠标移上去可以动的红线<br>例如这个</p>
+<h2 id="邶风是笨比"><a href="#邶风是笨比" class="headerlink" title="邶风是笨比"></a>邶风是笨比</h2><p>加两个#号 然后点空格说内容就可以了 很简单吧？</p>
+<p><i>还有定向URL</i><br>这是一个你们都感兴趣的网站: <a target="_blank" rel="noopener" href="http://myy.cass.cn/">神秘网站</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">方法就是</span><br><span class="line">前面的文字: [点击传送的文字](http://myy.cass.cn/)</span><br></pre></td></tr></table></figure>
+<p>凑个703字</p>
 
   </article>
 
@@ -209,7 +228,7 @@
 
  
 
-<script async src="/js/app.js?v=1626494953272"></script>
+<script async src="/js/app.js?v=1626501414824"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 <script>
@@ -222,6 +241,7 @@
 
 <script type="text/javascript" src="/js/clicklove.js"></script> 
 <script type="text/javascript" src="/js/yinghua.js"></script> 
+
   
 
 
